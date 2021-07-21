@@ -433,6 +433,8 @@ console.log(parseInt(11, 2)); // 3
 
 14. 12 - DOM e Árvore de layout
 
+![img/Dom-Tree-of-An-Example-Web-Page.png](img/Dom-Tree-of-An-Example-Web-Page.png)
+
 15. 13.a - Factories
 
 16. 13.b - Classes
