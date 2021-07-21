@@ -296,6 +296,39 @@ console.log(dados.contator); //undefined
 
 10. 8.b - Módulos
 
+- [js/8-b-Modulos-utilitario.js](js/8-b-Modulos-utilitario.js)
+
+```javascript
+const valor = 5;
+
+const helloWord = function () {
+    console.log('OLÁ MUNDO');
+};
+
+const multiplica = function (x) {
+    console.log(x * valor);
+};
+
+//export {helloWord, multiplica};
+export default helloWord;
+
+
+```
+
+- [js/8-b-Modulos-app.js](js/8-b-Modulos-app.js)
+
+```javascript
+//import {helloWord as olamundo, multiplica} from "./8-b-Modulos-utilitario.js";
+//import {helloWord,  multiplica} from "./8-b-Modulos-utilitario.js";
+//helloWord();
+//olamundo();
+
+import helloWord from "./8-b-Modulos-utilitario.js";
+
+helloWord();
+
+```
+
 11. 9 - Fila de eventos e Pilha de eventos
 
 12. 10 - SetTimeout, SetInterval, requestAnimationFrame
