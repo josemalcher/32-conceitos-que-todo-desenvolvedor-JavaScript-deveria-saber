@@ -331,6 +331,38 @@ helloWord();
 
 11. 9 - Fila de eventos e Pilha de eventos
 
+![img/event-loop.png](img/event-loop.png)
+
+- [js/9-Fila-de-eventos-e-Pilha-de-eventos.js](js/9-Fila-de-eventos-e-Pilha-de-eventos.js)
+
+```javascript
+function loopEventos() {
+    console.log('a');
+    for (let i = 1; i <= 4; i++) {
+        console.log( 'b - ' + i)
+    }
+    console.log('c');
+
+    setTimeout(() => {
+        console.log('d');
+    }, 0);
+    console.log('e');
+}
+
+loopEventos();
+/*
+a
+b - 1
+b - 2
+b - 3
+b - 4
+c
+e
+d
+*/
+
+```
+
 12. 10 - SetTimeout, SetInterval, requestAnimationFrame
 
 13. 11 - Operadores Bitwise
