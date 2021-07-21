@@ -487,6 +487,44 @@ cachorro.quantidadePes(); // Eu Tenho 4 pés/patas
 
 17. 14 - This, call, apply e bind
 
+- [js/14-This-call-apply-e-bind.js](js/14-This-call-apply-e-bind.js)
+
+```javascript
+// inspect code
+function teste() {
+    console.log(this)
+}
+// teste();
+// window {...}
+
+//const dados = {nome: 'Malcher Jr.'};
+/*
+const saudacao = function (idade) {
+    console.log(`Bem vindo ${this.nome}, sua idade é ${idade}`);
+};
+*/
+// saudacao.call(dados, 36);
+// Bem vindo Gabriel, sua idade é 36
+
+/*
+const dados = { nome : 'Malcher Jr'};
+const argumentos = [36];
+const saudacao = function (idade) {
+    console.log(`Bem vindo ${this.nome}, sua idade é ${idade}`)
+};
+*/
+// saudacao.apply(dados, argumentos);
+// Bem vindo Malcher Jr, sua idade é 36
+
+const dados = {nome: 'Malcher Jr'}
+const saudacao = function (idade) {
+    console.log(`Bem vindo ${this.nome}, sua idade é ${idade}`)
+};
+const bound = saudacao.bind(dados);
+// bound(36);
+// Bem vindo Malcher Jr, sua idade é 36
+```
+
 18. 15 - new, constructor e instanceof
 
 19. 16 - Prototype inheritance e prototype chain
