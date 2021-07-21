@@ -437,6 +437,19 @@ console.log(parseInt(11, 2)); // 3
 
 15. 13.a - Factories
 
+- [js/13-a-Factories.js](js/13-a-Factories.js)
+
+```javascript
+const Mamifero = function (nome, som) {
+    return {nome, som}
+};
+
+const cachorro = Mamifero('Cachorro', 'auaua');
+console.log(cachorro);
+//{ nome: 'Cachorro', som: 'auaua' }
+
+```
+
 16. 13.b - Classes
 
 17. 14 - This, call, apply e bind
