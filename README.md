@@ -527,6 +527,25 @@ const bound = saudacao.bind(dados);
 
 18. 15 - new, constructor e instanceof
 
+- [js/15-new-constructor-e-instanceof.js](js/15-new-constructor-e-instanceof.js)
+
+```javascript
+function Usuario(nome) {
+    // this = {}
+    this.nome = nome;
+    this.log = function () {
+        console.log(this);
+    };
+    // return this
+}
+
+const jose = new Usuario('Jose');
+console.log(jose); // Usuario { nome: 'Jose', log: [Function (anonymous)] }
+console.log(jose instanceof Usuario); // true
+console.log(jose instanceof String); // false
+
+```
+
 19. 16 - Prototype inheritance e prototype chain
 
 20. 17.a - Object.create
