@@ -548,6 +548,25 @@ console.log(jose instanceof String); // false
 
 19. 16 - Prototype inheritance e prototype chain
 
+- [js/16-Prototype-inheritance-e-prototype-chain.js](js/16-Prototype-inheritance-e-prototype-chain.js)
+
+```javascript
+const Usuario = function (nome) {
+    this.nome = nome;
+};
+
+const jose = new Usuario('Jose');
+
+Usuario.prototype.getNome = function () {
+    console.log(this.nome);
+};
+
+jose.getNome(); // jose
+
+// jose.__proto__ // {getNome: f, contructor: f ...}
+
+```
+
 20. 17.a - Object.create
 
 21. 17.b - Object.assign
