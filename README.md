@@ -708,6 +708,25 @@ console.log(usuario) // { nome: 'MALCHER JR', pontos: 1 }
 
 24. 19.b - State Mutation
 
+- [js/19-b-State-Mutation.js](js/19-b-State-Mutation.js)
+
+```javascript
+const pedido = {titulo: 'Meu Pedido', status: false}
+
+const copiaPedido = (pedido) => {
+    const novoPedido = Object.assign({}, pedido);
+    novoPedido.status = true;
+    return novoPedido;
+}
+
+const novoPedido = copiaPedido(pedido);
+novoPedido.titulo = 'Segundo Pedido';
+
+console.log(pedido)     // { titulo: 'Meu Pedido', status: false }
+console.log(novoPedido) // { titulo: 'Segundo Pedido', status: true }
+
+```
+
 25. 20 - Closures
 
 26. 21 - High Order Functions
