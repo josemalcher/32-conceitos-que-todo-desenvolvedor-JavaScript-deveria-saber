@@ -782,6 +782,36 @@ chamaAlerta()();
 
 27. 22 - Recursion
 
+- [js/22-Recursion.js](js/22-Recursion.js)
+
+```javascript
+/*
+function contagem(numero) {
+    console.log(numero);
+    if (numero > 0) {
+        contagem(numero - 1);
+    }
+}
+*/
+
+function contagem(numero) {
+    for (; numero > 0; numero--) {
+        console.log(numero)
+    }
+}
+
+contagem(5);
+
+/*
+5
+4
+3
+2
+1
+*/
+
+```
+
 28. 23.a - Collections
 
 29. 23.b - Generators
