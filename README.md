@@ -729,6 +729,30 @@ console.log(novoPedido) // { titulo: 'Segundo Pedido', status: true }
 
 25. 20 - Closures
 
+- [js/20-Closures.js](js/20-Closures.js)
+
+```javascript
+var nome = 'Malcher jR';
+
+function olaPessoa() {
+    console.log('Olá ' + nome);
+}
+
+nome = 'JOSE';
+olaPessoa(); // Olá JOSE
+
+function buscaItem() {
+    var numeroItem = 200;
+    fetch('/minha/url/do/banco?item=' + numeroItem, {
+        method: 'GET'
+    }).then(resultado => {
+        console.log('Busca pelo item ' + numeroItem + ' deu certo');
+    })
+}
+
+
+```
+
 26. 21 - High Order Functions
 
 27. 22 - Recursion
