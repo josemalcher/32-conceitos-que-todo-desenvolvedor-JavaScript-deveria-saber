@@ -755,6 +755,31 @@ function buscaItem() {
 
 26. 21 - High Order Functions
 
+- [js/21-High-Order-Functions.js](js/21-High-Order-Functions.js)
+
+```javascript
+function mostraAlerta() {
+    alert('Clicou no logo');
+}
+
+document.getElementById('logo-default')
+    .addEventListener('click', mostraAlerta);
+
+const maiusculo = function (texto) {
+    return texto.toUpperCase();
+};
+
+maiusculo('malcher');
+
+function chamaAlerta() {
+    return mostraAlerta();
+}
+
+chamaAlerta()();
+
+
+```
+
 27. 22 - Recursion
 
 28. 23.a - Collections
