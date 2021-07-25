@@ -930,6 +930,12 @@ undefined
 
 30. 24 - Promises
 
+- [js/24-Promises.js](js/24-Promises.js)
+
+```javascript
+
+```
+
 31. 25 - Async/Await
 
 32. 26.a - Data Structures: Stack e Queue
