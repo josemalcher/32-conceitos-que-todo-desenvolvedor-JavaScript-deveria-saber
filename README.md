@@ -1206,6 +1206,37 @@ São então formas de entender e praticar algoritmos simples ou complexos, resol
 
 36. 29 - Herança, Polimorfismo e reutilização de código
 
+- [js/29-Heranca-Polimorfismo-e-reutilizacao-de-codigo.js](js/29-Heranca-Polimorfismo-e-reutilizacao-de-codigo.js)
+
+```javascript
+class Forma {
+    desenhar() {
+        console.log('Eu sou uma forma');
+    }
+}
+
+class Triangulo extends Forma {
+
+}
+
+class Circulo extends Forma {
+    desenhar() {
+        console.log('eu Sou um circulo');
+    }
+}
+
+const formas = [new Forma(), new Triangulo(), new Circulo()];
+
+formas.forEach(forma => forma.desenhar());
+
+/*
+Eu sou uma forma
+Eu sou uma forma
+eu Sou um circulo
+*/
+
+```
+
 37. 30.a - Design Patterns: Module e Prototype
 
 38. 30.b - Design Patterns: Observer e Singleton
