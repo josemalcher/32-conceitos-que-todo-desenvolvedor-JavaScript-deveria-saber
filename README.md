@@ -1058,6 +1058,11 @@ console.log(fila) // [ 1, 2, 3, 4 ]
 
 33. 26.b - Data Structures: Linked list e Tree
 
+- [https://codepen.io/thonly/pen/QqRVJX](https://codepen.io/thonly/pen/QqRVJX)
+  - [js/26-b-Linked-List.js](js/26-b-Linked-List.js)
+- [https://codepen.io/thonly/pen/qVWOpM](https://codepen.io/thonly/pen/qVWOpM)
+  - [js/26-b-Binary-Search-Tree.js](js/26-b-Binary-Search-Tree.js)
+
 34. 27 - Expensive Operation e Big O Notation
 
 35. 28 - Algoritmos
