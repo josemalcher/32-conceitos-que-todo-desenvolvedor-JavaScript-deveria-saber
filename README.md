@@ -1186,6 +1186,24 @@ s
 
 35. 28 - Algoritmos
 
+Falar sobre algoritmos seria algo totalmente irrelevante em apenas 1 vídeo, ou até 2, pois temos semestres e matérias em faculdades totalmente voltadas a isso, cursos com duração de horas e horas explicando diversas coisas.
+
+Sendo assim te acrescentaria pouco ao falar só alguns minutos disso, além de talvez te confundir um pouco ou deixar sem algumas respostas importantes, então vou me resumir a deixar alguns links para que você possa estudar sobre algoritmos.
+
+Mas apenas uma introdução, um algoritmo é uma sequência de ações que são tomadas para resolver um problema. O nome pode fazer pensar que um algoritmo é algo muito mais complexo e sério, mas uma função sua que resolva uma soma de datas, por exemplo, já é um algoritmo.
+
+Isso implica que há diferentes formas de se resolver um problema e por isso refatoramos código, por que podemos pensar em uma forma diferente, menos custosa, que consome menos recursos e tem menos linhas de códigos e que ainda assim resolva o mesmo problema.
+
+O primeiro link seria a própria definição da Wikipédia sobre o assunto: https://pt.wikipedia.org/wiki/Algoritmo
+
+Depois, você pode ver alguns exemplos de algoritmos nesse Github e nesse blog: https://github.com/trekhleb/javascript-algorithms
+http://www.thatjsdude.com/interview/js1.html
+
+Uma forma de aprender a resolver um problema de formas diferentes é utilizando o CodeSignal, que é uma plataforma onde você deve resolver problemas em uma forma de gamificação, e ao responder corretamente é possível ver as soluções de outras pessoas, você vai se surpreender como algumas soluções podem ser simples: https://codesignal.com/
+
+São então formas de entender e praticar algoritmos simples ou complexos, resolvendo problemas e aprendendo formas diferentes de fazer o mesmo código.
+
+
 36. 29 - Herança, Polimorfismo e reutilização de código
 
 37. 30.a - Design Patterns: Module e Prototype
