@@ -1020,7 +1020,9 @@ vamosParaLoja().then(resultado => console.log(resultado));
 
 32. 26.a - Data Structures: Stack e Queue
 
-![js/26-a-Data-Structures-Stack-e-Queue.js](js/26-a-Data-Structures-Stack-e-Queue.js)
+![img/filas-pilhas.png](img/filas-pilhas.png)
+
+[js/26-a-Data-Structures-Stack-e-Queue.js](js/26-a-Data-Structures-Stack-e-Queue.js)
 
 ```javascript
 const pilha = []
