@@ -1239,6 +1239,29 @@ eu Sou um circulo
 
 37. 30.a - Design Patterns: Module e Prototype
 
+- [js/30-a-Design-Patterns-Module-e-Prototype.js](js/30-a-Design-Patterns-Module-e-Prototype.js)
+
+```javascript
+const Carro = {
+    tracao: '4x4',
+    ligar() {
+        return 'ligou';
+    }
+}
+const meuCarro = Object.create(Carro, {dono: {value: 'Malcher Jr'}})
+
+Carro.__proto__.desligar = function () {
+    return 'desligou';
+};
+console.log(meuCarro.ligar())
+console.log(meuCarro.desligar());
+/*
+ligou
+desligou
+*/
+
+```
+
 38. 30.b - Design Patterns: Observer e Singleton
 
 39. 31.a - Aplicações parciais
