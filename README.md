@@ -1264,6 +1264,101 @@ desligou
 
 38. 30.b - Design Patterns: Observer e Singleton
 
+- [js/30-b-Design-Patterns-Observer-e-Singleton.js](js/30-b-Design-Patterns-Observer-e-Singleton.js)
+
+```javascript
+class Subject {
+    constructor() {
+        this.observadores = [];
+    }
+    assinarObservavel(observador){
+        this.observadores.push(observador);
+    }
+
+    notificarObservavel(observador) {
+        const index = this.observadores.indexOf(observador);
+        if (index > -1) {
+            this.observadores[index].notificar(index);
+        }else{
+            console.log('Esse observador não existe');
+        }
+    }
+
+    notificarTodosObservadores() {
+        this.observadores.forEach((observador, index) =>{
+            observador.notificar(index)
+        })
+    }
+}
+
+class Observer {
+    notificar(index) {
+        console.log(`Observador ${index} foi modificado!`);
+    }
+}
+
+const subject = new Subject();
+const observador0 = new Observer();
+const observador1 = new Observer();
+const observador2 = new Observer();
+const observador3 = new Observer();
+
+subject.assinarObservavel(observador0)
+subject.assinarObservavel(observador1)
+subject.assinarObservavel(observador2)
+subject.assinarObservavel(observador3)
+
+subject.notificarObservavel(observador1);
+subject.notificarTodosObservadores();
+/*
+    Observador 1 foi modificado!
+    Observador 0 foi modificado!
+    Observador 1 foi modificado!
+    Observador 2 foi modificado!
+    Observador 3 foi modificado!
+*/
+
+```
+
+- [js/30-b-Design-Patterns-Observer-e-Singleton-2.js](js/30-b-Design-Patterns-Observer-e-Singleton-2.js)
+
+```javascript
+const impressora = (function (){
+    let instanciaDaImpressora;
+
+    function criar() {
+        function imprimir(){
+            console.log('Imprimindo documento');
+        }
+        function ligar(){
+            console.log('Ligando Impressora');
+        }
+        return{ imprimir , ligar}
+    }
+    return{
+        pegarInstancia: function (){
+            if (!instanciaDaImpressora) {
+                instanciaDaImpressora = criar();
+            }
+            return instanciaDaImpressora;
+        }
+    }
+})();
+
+const impressoraDaEmpersa1 = impressora.pegarInstancia();
+const impressoraDaEmpersa2 = impressora.pegarInstancia();
+impressoraDaEmpersa1.ligar();
+console.log(impressoraDaEmpersa1);
+console.log(impressoraDaEmpersa1 === impressoraDaEmpersa2);
+
+/*
+Ligando Impressora
+{ imprimir: [Function: imprimir], ligar: [Function: ligar] }
+true
+*/
+
+```
+
 39. 31.a - Aplicações parciais
 
 40. 31.b - Currying, Compose e pipe
